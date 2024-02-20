@@ -1,0 +1,7 @@
+figure.figsize : 5.5, 3.5
+figure.dpi : 800
+font.family: sans-serif
+font.sans-serif: Computer Modern Sans Serif
+font.size: 10
+axes.titlesize : medium   
+axes.labelsize : medium  
