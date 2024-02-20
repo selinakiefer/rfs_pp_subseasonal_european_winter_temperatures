@@ -1,0 +1,43 @@
+## Configuration File for Assessing the Skill of the Climatological Ensemble with the Brier Score (BS) ##
+
+# Set the path and file name of the climatological ensemble 
+PATH_climatological_ensemble : './Climatological_Ensemble/'
+ifile_climatological_ensemble : 'daily_climatological_ensemble_tg_1970_2000.csv'
+
+# Set the path and file names of the ground truth
+PATH_ground_truth : './Data_in_csv_Format/'
+ifile_ground_truth : 'eobsv23e_tg_3E_20E_45N_60N_1950_2020_binary_cold_waves.csv'
+
+# Location of the thresholds for categorizing the predictions
+PATH_thresholds : './Thresholds_Cold_Waves/'
+ifile_thresholds : 'cold_wave_thresholds_Smid_et_al_2019_for_1970_2000.csv'
+
+# Desired path for the output
+PATH_plots : './Plots/'
+PATH_statistics : './Skill_Assessment_with_BS/'
+PATH_output_files : './Climatological_Ensemble/'
+
+# Set additional information which cannot be inferred from the data directly (keep it short but still informative)
+model_name : 'Climatological_Ensemble'  
+input_data : 'av_tg'
+input_data_title : 'Fraction of Ensemble Members Predicting Cold Wave Days, | winters 1970/1971 - 1999/2000'    # if it's really long, put | in the string to create a linebreak in it
+ground_truth : 'cold_wave_days'                                                      
+location_input: '3E_20E_45N_60N' 
+location_ground_truth: '3E_20E_45N_60N'
+
+# Set the quantiles used for variability estimation and plotting
+upper_quantile: 0.95
+lower_quantile: 0.05
+
+# Set the details to the desired winters
+start_year_of_first_winter : 2000
+start_year_of_last_winter : 2019
+
+start_month_winter : 11
+start_day_winter: 1
+
+end_month_winter: 4
+end_day_winter: 30
+
+
+

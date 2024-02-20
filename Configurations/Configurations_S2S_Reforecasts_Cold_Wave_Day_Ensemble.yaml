@@ -1,0 +1,22 @@
+## Configuration File for Creating a Cold Wave Day S2S Reforecasts Ensemble ##
+
+# Set the path and file name of the S2S Reforecast Ensemble with absolute temperature values
+PATH_s2s_reforecast_ensemble : './Data_in_csv_Format/'
+ifile_s2s_reforecast_ensemble : 'S2S_Reforecast_Ensemble_Lead_Time_28d_2000_2020.csv'
+
+
+# Set the path and file name of the cold wave day thresholds
+PATH_cold_wave_thresholds : './Thresholds_Cold_Waves/'
+ifile_cold_wave_thresholds : 'cold_wave_thresholds_Smid_et_al_2019_for_1970_2000.csv'
+
+
+# Set the path to the desired output folders
+PATH_output_files : './Data_in_csv_Format/'
+PATH_plots : './Plots/'
+
+# Set the lead time 
+lead_time : '28d'
+
+
+
+

@@ -1,0 +1,27 @@
+## Configuration File for the Calculation of Cold Wave Thresholds ##
+
+# Set the path and file name of the ground truth
+PATH_ground_truth : './Data_in_csv_Format/'
+ifile_ground_truth : 'eobsv23e_tg_3E_20E_45N_60N_masked_1950_2020_only_Nov_Apr.csv'
+
+# Set the path and file name of the climatologcal ensemble
+PATH_climatological_ensemble: './Data_in_csv_Format/'
+ifile_climatological_ensemble: 'daily_climatological_ensemble_tg_1970_2000.csv'
+
+# Set the path to the desired output folders
+PATH_output_files : './Thresholds_Cold_Waves/'
+PATH_plots : './Plots/'
+
+# Set additional information for the cold wave threshold which cannot be inferred from the data directly (keep it short but still informative)
+unit_of_ground_truth_and_predictions : 'K'
+
+# Set the details to the desired winters
+start_year_of_first_winter : 1970
+start_year_of_last_winter : 1999
+
+start_month_winter : 11
+start_day_winter: 1
+
+end_month_winter: 4
+end_day_winter: 30
+

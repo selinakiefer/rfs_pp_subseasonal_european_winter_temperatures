@@ -1,0 +1,36 @@
+## Configuration File for Assessing the Skill of the Climatological Ensemble with the Continuous Ranked Probability Score (CRPS) ##
+
+# Set the path and file name of the climatological ensemble 
+PATH_climatological_ensemble : './Climatological_Ensemble/'
+ifile_climatological_ensemble : 'daily_climatological_ensemble_tg_1970_2020.csv'
+
+# Set the path and file name of the ground truth
+PATH_ground_truth : './Data_in_csv_Format/'
+ifile_ground_truth : 'eobsv23e_tg_3E_20E_45N_60N_1950_2020_only_Nov_Apr_lead_time_28d.csv'
+
+# Desired paths for the output
+PATH_plots : './Plots/'
+PATH_statistics : './Skill_Assessment_with_CRPS/'
+
+# Set additional information which cannot be inferred from the data directly (keep it short but still informative)
+model_name : 'Climatological_Ensemble' 
+input_data : 'av_tg'
+input_data_title : 'average tg 3E-20E and 45N-60N, | winters 1970/1971 - 1999/2000'    # if it's really long, put | in the string to create a linebreak in it
+ground_truth : 'av_tg'                                                      
+unit_of_ground_truth_and_climatological_ensemble : 'K'
+location_input: '3E_20E_45N_60N'
+location_ground_truth: '3E_20E_45N_60N'
+
+# Set the quantiles used for variability estimation when plotted
+upper_quantile: 0.95
+lower_quantile: 0.05
+
+# Set the details to the winters to be evaluated
+start_year_of_first_winter : 2000
+start_year_of_last_winter : 2019
+
+start_month_winter : 11
+start_day_winter: 1
+
+end_month_winter: 4
+end_day_winter: 30

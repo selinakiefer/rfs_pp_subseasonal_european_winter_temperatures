@@ -1,0 +1,39 @@
+## Configuration File for Assessing the Skill of a Postprocessing QRF model with the Continuous Ranked Probability Score (CRPS) ##
+
+# Set the path and file names of the predictions 
+PATH_predictions : './Predictions_QRF_Models/'
+ifile_predictions : 'QRF_predictions_av_tg_3E_20E_45N_60N_input_month_statistics_u10_z100_z250_z500_z850_t850_H850_u300_msl_1000_trees_min_node_size_5_s2s_era5_ens_60W_60E_20N_80N_lead_14d_winter_2000_2020.csv'
+
+# Set the path and file names of the ground truth
+PATH_ground_truth : './Data_in_csv_Format/'
+ifile_ground_truth : 'eobsv23e_tg_3E_20E_45N_60N_1950_2020_only_Nov_Apr_14d_lead.csv'
+
+# Desired path for the output
+PATH_plots : './Plots/'
+PATH_statistics : './Skill_Assessment_with_CRPS/'
+
+# Set additional information which cannot be inferred from the data directly (keep it short but still informative)
+model_name : 'QRF'
+input_data : 'month_statistics_u10_z100_z250_z500_z850_t850_H850_u300_msl_1000_trees_min_node_size_5_s2s_era5_ens'
+input_data_title : 'Statistics of Fields of u10, z100, z250 |z500, z850, t850, H850, u300, msl'    # if it's really long, put | in the string to create a linebreak in it
+ground_truth : 'av_tg'                                                      
+unit_of_ground_truth_and_predictions : 'K'
+location_input: '60W_60E_20N_80N'
+location_ground_truth: '3E_20E_45N_60N'
+
+# Set the lead time 
+lead_time : 14
+
+# Set the quantiles used for variability estimation
+upper_quantile: 0.95
+lower_quantile: 0.05
+
+# Set the details to the desired winters
+start_year_of_first_winter : 2000
+start_year_of_last_winter : 2019
+
+start_month_winter : 11
+start_day_winter: 1
+
+end_month_winter: 4
+end_day_winter: 30

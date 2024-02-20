@@ -1,0 +1,27 @@
+## Configuration File for Creating a S2S Reforecasts Ensemble from S2S Reforecasts Control and Perturbed Runs ##
+
+# Set the path and file name of the S2S Reforecasts (take the different lead times into consideration)
+PATH_s2s_reforecasts : './Data_in_grib_Format/'
+
+ifiles_s2s_reforecasts_control : ['s2s_control_05_Oct_2000_2020', 's2s_control_08_Oct_2000_2020', 's2s_control_12_Oct_2000_2020', 's2s_control_15_Oct_2000_2020', 's2s_control_19_Oct_2000_2020','s2s_control_22_Oct_2000_2020', 's2s_control_26_Oct_2000_2020', 's2s_control_29_Oct_2000_2020', 's2s_control_02_Nov_2000_2020', 's2s_control_05_Nov_2000_2020', 's2s_control_09_Nov_2000_2020', 's2s_control_12_Nov_2000_2020', 's2s_control_16_Nov_2000_2020', 's2s_control_19_Nov_2000_2020', 's2s_control_23_Nov_2000_2020', 's2s_control_26_Nov_2000_2020', 's2s_control_30_Nov_2000_2020', 's2s_control_03_Dec_2000_2020', 's2s_control_07_Dec_2000_2020', 's2s_control_10_Dec_2000_2020', 's2s_control_14_Dec_2000_2020', 's2s_control_17_Dec_2000_2020', 's2s_control_21_Dec_2000_2020', 's2s_control_24_Dec_2000_2020', 's2s_control_28_Dec_2000_2020', 's2s_control_31_Dec_2000_2020', 's2s_control_04_Jan_2000_2020', 's2s_control_07_Jan_2000_2020', 's2s_control_11_Jan_2000_2020', 's2s_control_14_Jan_2000_2020', 's2s_control_18_Jan_2000_2020', 's2s_control_21_Jan_2000_2020', 's2s_control_25_Jan_2000_2020', 's2s_control_28_Jan_2000_2020', 's2s_control_01_Feb_2000_2020', 's2s_control_04_Feb_2000_2020', 's2s_control_08_Feb_2000_2020', 's2s_control_11_Feb_2000_2020', 's2s_control_15_Feb_2000_2020', 's2s_control_18_Feb_2000_2020', 's2s_control_22_Feb_2000_2020', 's2s_control_25_Feb_2000_2020', 's2s_control_01_Mar_2000_2020', 's2s_control_04_Mar_2000_2020', 's2s_control_08_Mar_2000_2020', 's2s_control_11_Mar_2000_2020', 's2s_control_15_Mar_2000_2020', 's2s_control_18_Mar_2000_2020', 's2s_control_22_Mar_2000_2020', 's2s_control_25_Mar_2000_2020', 's2s_control_29_Mar_2000_2020', 's2s_control_01_Apr_2000_2020']
+# , 's2s_control_05_Apr_2000_2020', 's2s_control_08_Apr_2000_2020', 's2s_control_12_Apr_2000_2020', 's2s_control_15_Apr_2000_2020']
+
+ifiles_s2s_reforecasts_perturbed : ['s2s_perturbed_05_Oct_2000_2020', 's2s_perturbed_08_Oct_2000_2020', 's2s_perturbed_12_Oct_2000_2020','s2s_perturbed_15_Oct_2000_2020', 's2s_perturbed_19_Oct_2000_2020', 's2s_perturbed_22_Oct_2000_2020', 's2s_perturbed_26_Oct_2000_2020', 's2s_perturbed_29_Oct_2000_2020', 's2s_perturbed_02_Nov_2000_2020','s2s_perturbed_05_Nov_2000_2020', 's2s_perturbed_09_Nov_2000_2020', 's2s_perturbed_12_Nov_2000_2020', 's2s_perturbed_16_Nov_2000_2020', 's2s_perturbed_19_Nov_2000_2020', 's2s_perturbed_23_Nov_2000_2020', 's2s_perturbed_26_Nov_2000_2020', 's2s_perturbed_30_Nov_2000_2020', 's2s_perturbed_03_Dec_2000_2020', 's2s_perturbed_07_Dec_2000_2020', 's2s_perturbed_10_Dec_2000_2020', 's2s_perturbed_14_Dec_2000_2020', 's2s_perturbed_17_Dec_2000_2020', 's2s_perturbed_21_Dec_2000_2020', 's2s_perturbed_24_Dec_2000_2020', 's2s_perturbed_28_Dec_2000_2020', 's2s_perturbed_31_Dec_2000_2020', 's2s_perturbed_04_Jan_2000_2020', 's2s_perturbed_07_Jan_2000_2020', 's2s_perturbed_11_Jan_2000_2020', 's2s_perturbed_14_Jan_2000_2020', 's2s_perturbed_18_Jan_2000_2020', 's2s_perturbed_21_Jan_2000_2020', 's2s_perturbed_25_Jan_2000_2020', 's2s_perturbed_28_Jan_2000_2020', 's2s_perturbed_01_Feb_2000_2020', 's2s_perturbed_04_Feb_2000_2020', 's2s_perturbed_08_Feb_2000_2020', 's2s_perturbed_11_Feb_2000_2020', 's2s_perturbed_15_Feb_2000_2020', 's2s_perturbed_18_Feb_2000_2020', 's2s_perturbed_22_Feb_2000_2020', 's2s_perturbed_25_Feb_2000_2020', 's2s_perturbed_01_Mar_2000_2020', 's2s_perturbed_04_Mar_2000_2020', 's2s_perturbed_08_Mar_2000_2020', 's2s_perturbed_11_Mar_2000_2020', 's2s_perturbed_15_Mar_2000_2020', 's2s_perturbed_18_Mar_2000_2020', 's2s_perturbed_22_Mar_2000_2020', 's2s_perturbed_25_Mar_2000_2020', 's2s_perturbed_29_Mar_2000_2020', 's2s_perturbed_01_Apr_2000_2020']
+#, 's2s_perturbed_05_Apr_2000_2020', 's2s_perturbed_08_Apr_2000_2020', 's2s_perturbed_12_Apr_2000_2020', 's2s_perturbed_15_Apr_2000_2020'
+
+
+# Set the path and file name of the area mask (for Central Europe)
+PATH_area_mask : './Data_in_csv_Format/'
+ifile_area_mask : 'Mask_for_Defining_Central_Europe.csv'
+
+
+# Set the path to the desired output folders
+PATH_output_files : './Data_in_csv_Format/'
+PATH_plots : './Plots/'
+
+# Set the lead time 
+lead_time : '28d'
+
+
+
+
