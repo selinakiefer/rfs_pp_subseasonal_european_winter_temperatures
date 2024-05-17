@@ -2,21 +2,21 @@
 
 # Set the path and file name of the S2S reforecasts ensemble 
 PATH_s2s_reforecasts_ensemble : './Data_in_csv_Format/'
-ifile_s2s_reforecasts_ensemble : 'S2S_Reforecast_Binary_Cold_Wave_Day_Ensemble_Lead_Time_28d_2000_2020.csv'
+ifile_s2s_reforecasts_ensemble : 'S2S_Reforecast_Binary_Cold_Wave_Day_Mean_Bias_Corrected_Ensemble_Lead_Time_14d_2000_2020.csv'
 
 # Set the path and file names of the ground truth
 PATH_ground_truth : './Data_in_csv_Format/'
-ifile_ground_truth : 'eobsv23e_tg_3E_20E_45N_60N_1950_2020_binary_cold_waves_lead_time_28d.csv'
+ifile_ground_truth : 'eobsv23e_tg_3E_20E_45N_60N_1950_2020_binary_cold_waves_lead_time_14d.csv'
 
 # Desired paths for the output
 PATH_plots : './Plots/'
 PATH_statistics : './Skill_Assessment_with_BS/'
 
 # Set the lead time 
-lead_time : '28d'
+lead_time : '14d'
 
 # Set additional information which cannot be inferred from the data directly (keep it short but still informative)
-model_name : 'S2S Reforecasts Ensemble'  
+model_name : 'mean_bias_corrected_s2s_reforecast_ensemble'  
 input_data : 'cold_wave_days'
 input_data_title : 'Fraction of Ensemble Members Predicting Cold Wave Days'    # if it's really long, put | in the string to create a linebreak in it
 ground_truth : 'cold_wave_days'                                                      
