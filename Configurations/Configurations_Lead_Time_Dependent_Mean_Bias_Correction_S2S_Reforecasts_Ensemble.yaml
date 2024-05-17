@@ -1,0 +1,25 @@
+## Configuration File for Calculating a Lead Time Dependent Mean Bias Correction for S2S Reforecasts ##
+
+# Set the path and file name of the S2S reforecasts ensemble 
+PATH_s2s_reforecasts_ensemble : './Data_in_csv_Format/'
+ifile_s2s_reforecasts_ensemble : 'S2S_Reforecast_Ensemble_Lead_Time_28d_2000_2020.csv'
+
+# Set the path and file name of the ground truth
+PATH_ground_truth : './Data_in_csv_Format/'
+ifile_ground_truth : 'eobsv23e_tg_3E_20E_45N_60N_1950_2020_only_Nov_Apr_28d_lead.csv'
+
+# Desired paths for the output
+PATH_output_file : './Data_in_csv_Format/'
+
+# Set the lead time 
+lead_time : '28d'
+
+# Set the details to the winters to be evaluated
+start_year_of_first_winter : 2000
+start_year_of_last_winter : 2019
+
+start_month_winter : 11
+start_day_winter: 1
+
+end_month_winter: 4
+end_day_winter: 30
